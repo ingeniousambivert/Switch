@@ -1,0 +1,1568 @@
+<!DOCTYPE html>
+<html lang="en">
+<!--
+WEBSITE AUTHORS :
+ MONARCH MAISURIYA
+ HIMANSHU JOSHI
+                  
+  TEAM : 
+  MONARCH MAISURIYA 
+  HIMANSHU JOSHI 
+  PARIN PATEL 
+  ABHIDYU ADUKIA
+    
+  FEELANCING INTERFACE FOR SWICH TEAM
+-->
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <meta http-equiv="x-ua-compatible" content="ie=edge" />
+  <title>Swich Team</title>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-137482687-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+      
+    gtag('js', new Date());
+
+    gtag('config', 'UA-137482687-1');
+  </script>
+
+  <!--Favicon-->
+  <link rel="shortcut icon" href="/img/favicon.ico" type="image/x-icon">
+  <link rel="shortcut icon" href="{{'/img/favicon.ico' | relURL}}" type="image/x-icon" />
+  <link rel="icon" href="{{'/img/favicon.ico' | relURL}}" type="image/x-icon" />
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+    integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+
+  <!-- Swiper's CSS -->
+  <link rel="stylesheet" href="./css/swiper.css">
+
+  <!-- Bootstrap core CSS -->
+  <link href="css/bootstrap.min.css" rel="stylesheet" />
+  <!-- Material Design Bootstrap -->
+  <link href="css/mdb.min.css" rel="stylesheet" />
+
+  <!--Fonts-->
+  <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Anton" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Fjalla+One" rel="stylesheet">
+
+
+  <!--Custom CSS-->
+  <link href="css/style.css" rel="stylesheet" />
+
+  <!--Typeit JS-->
+  <script src="./js/typeit.min.js"></script>
+  <script src="./js/typeit.js"></script>
+
+  <!-- UIkit CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.3/css/uikit.min.css" />
+
+  <!-- UIkit JS -->
+    <script src="./js/swiper.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.3/js/uikit.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.3/js/uikit-icons.min.js"></script>
+<style>
+    
+     .swiper-container {
+      width: 100%;
+      height: 100%;
+    }
+    .swiper-slide {
+      text-align: center;
+      font-size: 18px;
+      background: #fff;
+      /* Center slide text vertically */
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: -webkit-flex;
+      display: flex;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      -webkit-justify-content: center;
+      justify-content: center;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      -webkit-align-items: center;
+      align-items: center;
+    }
+    
+    #smproj{
+         display: none  ;
+     }
+    
+ @media (min-width: 0px) and (max-width: 935px) {
+        #proj{
+            display: none;
+        }
+     #smproj{
+         display: block;
+     }
+    }
+    </style>
+
+</head>
+<body onload="callRandom();">
+<!--Main Navigation-->
+<header>
+
+  <!--Navbar-->
+  <nav class="navbar navbar-expand-lg navbar-light fixed-top white animated fadeInDownBig ">
+
+    <div class="container">
+
+      <!-- Navbar brand -->
+      <a class="navbar-brand" id="logo" href="#swiched">SWICH</a>
+
+      <!-- Collapse button -->
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navigation-bar"
+        aria-controls="navigation-bar" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <!-- Collapsible content -->
+
+      <div class="collapse navbar-collapse " id="navigation-bar">
+        <!-- Links -->
+        <ul class="navbar-nav ml-auto smooth-scroll">
+
+          <li class="nav-item">
+            <a class="nav-link" id="wk" href="#projects">Work</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" id="sr" href="#services">Services</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" data-toggle="dropdown" aria-haspopup="true"
+              aria-expanded="false">Group</a>
+            <div class="dropdown-menu dropdown-primary" aria-labelledby="navbarDropdownMenuLink">
+              <a class="dropdown-item text-center" href="#about">About Us</a>
+              <a class="dropdown-item text-center" href="help.html">Contact Us</a>
+              <a class="dropdown-item text-center" href="join.html">Join Us</a>
+            </div>
+          </li>
+          <li class="nav-item"> <a href="#contact"> <button
+                class="btn round deep-purple btn-md my-2 my-sm-0 ml-3 white-text">Get a
+                quote</button></a></li>
+        </ul>
+        <!-- Links -->
+
+      </div>
+      <!-- Collapsible content -->
+
+    </div>
+
+  </nav>
+  <!--/.Navbar-->
+
+  <!-- Full Page Intro -->
+  <button onclick="topFunction()" id="myBtn" class="hoverable" title="Back To Top"><i
+      class="fas fa-chevron-up"></i></button>
+  <div id="intro" class="view">
+
+    <div class="mask" id="vm">
+
+      <div class="container-fluid d-flex align-items-center justify-content-center h-100">
+
+        <div class="row d-flex justify-content-center text-center">
+
+
+          <div class="col-xl-5 " style="margin-top:15%;">
+
+            <!-- Heading -->
+            <h1 id="head" class="display-1 text-shadow animated pulse">We work towards boosting <br>your business
+              with the<br>technological know-how.</h1><br>
+
+            <!-- Divider -->
+            <hr id="hero-divider"><br>
+
+            <!-- Description -->
+            <h4 id="subhead" class="my-4 text-shadow nimated pulse">We are a Freelancers Team.<br>And we are
+              here
+              to help you
+              succeed.<br>
+              Lets turn your idea into a scalable business.</h4><a href="#contact">
+              <button type="button" id="cta" class="round btn purple-gradient white-text nimated pulse">Work
+                Together</button>
+            </a>
+
+          </div>
+
+          <div class="col-xl-7 " style="margin-top:10%;">
+            <img src="img/hero-2.png" id="hero-svg">
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+  <!--/.Full Page Intro-->
+
+  <!-- Typeit JS -->
+  <script type="text/javascript">
+    new TypeIt('#subhead', {
+      strings: ["This is a great string.", "But here is a better one."],
+      speed: 80,
+      breakLines: false,
+      autoStart: false,
+      loop: true
+    });
+      
+      
+  </script>
+</header>
+<!-- Main Layout -->
+<main>
+
+  <div style="padding: 5%;" id="svg-div">
+    <div class="container">
+      <!-- Section: SVG -->
+      <section class="text-center wow fadeIn" data-wow-delay="0.3s">
+
+        <div class="row">
+          <div class="col-md-5">
+            <img src="img/hero-3.png" id="hero-svg-2">
+          </div>
+          <div class="col-md-6"
+            style="margin-top:5%;text-shadow: 1px 1px 1.5px rgba(0, 0, 0, 0.25); text-align:right; font-size:1rem;">
+            <p class="dark-grey-text font-weight-bolder">
+              When the millennium changed people's perspective of doing business changed. The technological advancements
+              are fueling
+              today's business growth. Locating potential customers became very easy. Instead of calling all customers
+              directly
+              companies have different approaches for the same.
+              Our job starts with you: understanding what you need, so we can present options that make sense for you.
+            </p>
+          </div>
+          <div class="col-md-1">
+            <hr id="vertical"><br>
+          </div>
+        </div>
+
+      </section>
+      <!-- Section: SVG -->
+    </div>
+  </div>
+
+  <!--SECTION SEPARATOR-->
+
+  <div style="padding: 2%; color:white;" class="rgba-gradient text-shadow">
+    <div class="container">
+
+      <!-- Section: Features v.1 -->
+      <section id="products" class="text-center wow fadeIn" data-wow-delay="0.3s">
+
+        <!-- Section heading -->
+        <h1 class="head text-center h1 my-5 white-text">Our Mantra For Excellence</h1>
+        <!-- Section description -->
+        <p class="text-center white-text mb-5 mx-auto w-responsive lead">We are a blend of creativity and
+          technical
+          wizardry. The best people formula for great products.</p>
+
+        <!-- Grid row -->
+        <div class="row">
+
+          <!-- Grid column -->
+          <div class="col-md-4 mb-4">
+            <i class="fas fa-4x fa-chart-area white-text"></i>
+            <h4 class="font-weight-bold my-4  white-text">Analytics</h4>
+            <p class="white-text">We thoroughly examine your needs to create the best
+              for your
+              business and your clients.</p>
+          </div>
+          <!-- Grid column -->
+
+          <!-- Grid column -->
+          <div class="col-md-4 mb-4">
+            <i class="fas fa-4x fa-pencil-alt white-text"></i>
+            <h4 class="font-weight-bold my-4  white-text">Design</h4>
+            <p class="white-text">Our designers aim to create awe-inspiring products which
+              will draw customers to you.</p>
+          </div>
+          <!-- Grid column -->
+
+          <!-- Grid column -->
+          <div class="col-md-4 mb-4">
+            <i class="fas fa-4x fa-laptop white-text"></i>
+            <h4 class="font-weight-bold my-4 white-text">Development</h4>
+            <p class="white-text">We first solve your problem and then develop the solution.</p>
+          </div>
+          <!-- Grid column -->
+
+        </div>
+        <!-- Grid row -->
+
+      </section>
+      <!-- Section: Features v.1 -->
+    </div>
+
+  </div>
+  <!--SECTION SEPARATOR-->
+
+      
+    <!-- Section heading -->
+    <h1 class="head text-center h1 my-5">Top Of The Line Work</h1>
+    
+    <div class="swiper-container" id="smproj" >
+    
+    <div class="swiper-wrapper">
+      <div class="swiper-slide">
+        <div class="card w-75">
+
+  <!-- Card image -->
+  <img class="card-img-top" src="./img/codershive.png" alt="chive">
+
+  <!-- Card content -->
+  <div class="card-body">
+
+    <!-- Title -->
+    <h4 class="card-title"><a>codersHive</a></h4>
+    <!-- Text -->
+    <p class="card-text">
+      codersHive is a convenient environment setup for professional and amateur developers alike. It is a
+                place where
+                developers can share their vision to create a fresh perspective for the future.<br>
+     <a class="slider-links" target="_blank" href="https://chive.000webhostapp.com/">Learn More</a>
+      </p>
+    <!-- Button -->
+
+
+  </div>
+
+</div>
+<!-- Card -->
+        </div>
+      <div class="swiper-slide">
+        
+        <div class="card w-75">
+
+  <!-- Card image -->
+  <img class="card-img-top" src="./img/omnifood.png" alt="omnifood">
+
+  <!-- Card content -->
+  <div class="card-body">
+
+    <!-- Title -->
+    <h4 class="card-title"><a>Omnifood</a></h4>
+    <!-- Text -->
+    <p class="card-text">
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellat fugit ullam
+                voluptatum
+                tenetur ab, non beatae, impedit dolorem itaque voluptates facilis necessitatibus
+                suscipit
+                dolor rerum dolores dignissimos alias facere sunt aliquid.
+           
+      </p>
+    <!-- Button -->
+
+
+  </div>
+
+</div>
+        </div>
+      <div class="swiper-slide">
+          <div class="card w-75">
+
+  <!-- Card image -->
+  <img class="card-img-top" src="./img/diary.png" alt="Secret-Diary">
+
+  <!-- Card content -->
+  <div class="card-body">
+
+    <!-- Title -->
+    <h4 class="card-title"><a>Secret-Diary</a></h4>
+    <!-- Text -->
+    <p class="card-text">
+       Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellat fugit ullam
+                voluptatum
+                tenetur ab, non beatae, impedit dolorem itaque voluptates facilis necessitatibus
+                suscipit
+                dolor rerum dolores dignissimos alias facere sunt aliquid.
+           
+      </p>
+    <!-- Button -->
+
+
+  </div>
+
+</div>
+        
+        </div>
+      <div class="swiper-slide">
+        
+        <div class="card w-75">
+
+  <!-- Card image -->
+  <img class="card-img-top" src="./img/shout-it.png" alt="Secret-Diary">
+
+  <!-- Card content -->
+  <div class="card-body">
+
+    <!-- Title -->
+    <h4 class="card-title"><a>Secret-Diary</a></h4>
+    <!-- Text -->
+    <p class="card-text">
+       Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellat fugit ullam
+                voluptatum
+                tenetur ab, non beatae, impedit dolorem itaque voluptates facilis necessitatibus
+                suscipit
+                dolor rerum dolores dignissimos alias facere sunt aliquid.
+           
+      </p>
+    <!-- Button -->
+
+
+  </div>
+
+</div>
+        
+        
+        </div>
+      
+    
+    
+    </div>
+    
+     <div class="swiper-pagination"></div>
+  </div>
+    </div>
+    
+    <div class="cd-slider-wrapper" id="proj">
+      <ul class="cd-slider hoverable" style="border-radius:5px;">
+        <li class="is-visible">
+          <div class="cd-half-block image"></div>
+
+          <div class="cd-half-block content">
+            <div>
+              <h2 class="white-text head"></h2>
+              <p class="cd-text">
+                codersHive is a convenient environment setup for professional and amateur developers alike. It is a
+                place where
+                developers can share their vision to create a fresh perspective for the future.<br>
+                <a class="slider-links" target="_blank" href="https://chive.000webhostapp.com/">Learn More</a>
+              </p>
+
+            </div>
+          </div>
+        </li> <!-- .cd-half-block.content -->
+
+        <li>
+          <div class="cd-half-block image"></div>
+
+          <div class="cd-half-block content light-bg">
+            <div>
+              <h2 class="white-text head">Omnifood</h2>
+              <p class="cd-text">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellat fugit ullam
+                voluptatum
+                tenetur ab, non beatae, impedit dolorem itaque voluptates facilis necessitatibus
+                suscipit
+                dolor rerum dolores dignissimos alias facere sunt aliquid.
+              </p>
+            </div>
+          </div> <!-- .cd-half-block.content -->
+        </li>
+
+        <li>
+          <div class="cd-half-block image"></div>
+
+          <div class="cd-half-block content">
+            <div>
+              <h2 class="white-text head">Secret-Diary</h2>
+              <p class="cd-text">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellat fugit ullam
+                voluptatum
+                tenetur ab, non beatae, impedit dolorem itaque voluptates facilis necessitatibus
+                suscipit
+                dolor rerum dolores dignissimos alias facere sunt aliquid.
+              </p>
+            </div>
+          </div> <!-- .cd-half-block.content -->
+        </li>
+
+        <li>
+          <div class="cd-half-block image"></div>
+
+          <div class="cd-half-block content">
+            <div>
+              <h2 class="white-text head">Shout-It</h2>
+              <p class="cd-text">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellat fugit ullam
+                voluptatum
+                tenetur ab, non beatae, impedit dolorem itaque voluptates facilis necessitatibus
+                suscipit
+                dolor rerum dolores dignissimos alias facere sunt aliquid.
+              </p>
+            </div>
+          </div> <!-- .cd-half-block.content -->
+        </li>
+
+
+       
+
+      </ul> <!-- .cd-slider -->
+    </div> <!-- .cd-slider-wrapper -->
+    <script src="js/jquery-2.1.4.js"></script>
+    <script src="js/jquery.mobile.custom.min.js"></script>
+    <script src="js/main.js"></script> <!-- Resource jQuery -->
+
+
+  </section>
+
+  <!--SECTION SEPARATOR-->
+
+  <div class="container-fluid" style="padding:2%;">
+
+    <div class="container py-4">
+
+      <!--Section: Services-->
+      <section id="services" class="section mt-3 mb-3 pb-3">
+
+        <!-- Section heading -->
+        <h1 class="text-center title my-5 pt-4 pb-5 head " data-wow-delay="0.2s">
+          <strong>Services We Provide</strong>
+        </h1>
+
+        <!-- First row -->
+        <div class="row wow fadeIn" data-wow-delay="0.4s">
+
+          <!-- First column -->
+          <div class="col-md-4 mb-4 text-center">
+
+            <!--Panel-->
+            <div class="card card-body text-left rgba-gradient hoverable">
+              <p class="font-weight-bold title font-weight-bold white-text text-uppercase spacing mt-4 mx-4">
+                <i class="fas fa-mobile white-text" style="margin-right:1rem;"></i>
+                <strong> App development</strong>
+              </p>
+              <p class="white-text font-small mx-4"> Mobile App ecosystem is diverse they can help business to get the
+                mind share and heart share of the customers to build brand loyalty. So, we
+                can take care of that need and help your business grow.
+              </p>
+              <!-- Collapse buttons -->
+              <div>
+                <button style="color:#CC578A;" class="btn round btn-white btn-sm" type="button" data-toggle="collapse"
+                  data-target="#app-dev" aria-expanded="false" aria-controls="collapseExample">
+                  <i class="fas fa-info"></i>
+                </button>
+              </div>
+              <!-- / Collapse buttons -->
+
+              <!-- Collapsible element -->
+              <div class="collapse" id="app-dev">
+                <div class="mt-3">
+                  <div class="card">
+
+                    <div class="card-body">
+
+                      <div class="row">
+                        <div class="col-md-12">
+                          <p class="text-center">Technologies we use.</p>
+                        </div>
+                      </div>
+
+                      <div class="row">
+
+                        <div class="col-3"><img src="./img/android-logo.png">
+                        </div>
+                        <div class="col-3"><img src="./img/flutter-logo.png">
+                        </div>
+                        <div class="col-3"><img src="./img/pwa-logo.png">
+                        </div>
+                        <div class="col-3"><img src="./img/cordova.svg">
+                        </div>
+
+                      </div>
+                    </div>
+
+                  </div>
+                </div>
+              </div>
+              <!-- / Collapsible element -->
+            </div>
+            <!--/.Panel-->
+
+          </div>
+          <!-- /First column -->
+
+          <!-- Second column -->
+          <div class="col-md-4 mb-4 text-center" style="margin-top:2%;">
+
+            <!--Panel-->
+            <div class="card card-body text-left rgba-gradient hoverable">
+              <p class="font-weight-bold title font-weight-bold white-text text-uppercase spacing mt-4 mx-4">
+                <i class="fas fa-swatchbook white-text" style="margin-right:1rem;"></i>
+                <strong>Web Design</strong>
+              </p>
+              <p class="white-text font-small mx-4">Web designing is an important aspect to capture the essence of your
+                business vision , it impacts how your audience perceives your brand. And our talented designers have it
+                covered for you.
+              </p>
+              <!-- Collapse buttons -->
+
+            </div>
+            <!--/.Panel-->
+
+          </div>
+          <!-- /.Second column -->
+
+          <!-- First column -->
+          <div class="col-md-4 mb-4 text-center">
+
+            <!--Panel-->
+            <div class="card card-body text-left rgba-gradient hoverable">
+              <p class="font-weight-bold title font-weight-bold white-text text-uppercase spacing mt-4 mx-4">
+                <i class="fab fa-chrome white-text" style="margin-right:1rem;"></i>
+                <strong>Web & CMS Development</strong>
+              </p>
+              <p class="white-text font-small mx-4">Web development services help your company to increase product
+                knowledge, maintain communication with
+                potential clients, sell your products or services, generate leads for your business.
+              </p>
+              <!-- Collapse buttons -->
+              <div>
+
+                <button style="color:#CC578A;" class="btn round btn-white btn-sm" type="button" data-toggle="collapse"
+                  data-target="#web-dev" aria-expanded="false" aria-controls="collapseExample">
+                  <i class="fas fa-info"></i>
+                </button>
+              </div>
+              <!-- / Collapse buttons -->
+
+              <!-- Collapsible element -->
+              <div class="collapse" id="web-dev">
+                <div class="mt-3">
+                  <div class="card">
+
+                    <div class="card-body">
+
+                      <div class="row">
+                        <div class="col-md-12">
+                          <p class="text-center">Core frameworks we use.</p>
+                        </div>
+                      </div>
+
+                      <div class="row">
+
+                        <div class="col-3"><img src="./img/angular-logo.svg">
+                        </div>
+                        <div class="col-3"><img src="./img/react-logo.png">
+                        </div>
+                        <div class="col-3"><img src="./img/django-logo.png">
+                        </div>
+                        <div class="col-3"><img src="./img/php-logo.png">
+                        </div>
+
+                      </div>
+                    </div>
+
+                  </div>
+                </div>
+              </div>
+              <!-- / Collapsible element -->
+            </div>
+            <!--/.Panel-->
+
+          </div>
+          <!-- /First column -->
+
+
+          <!-- Third column -->
+          <div class="col-md-6 mb-4 text-center">
+
+            <!--Panel-->
+            <div class="card card-body text-left rgba-gradient hoverable">
+              <p class="font-weight-bold title font-weight-bold white-text text-uppercase spacing mt-4 mx-4">
+                <i class="fas fa-address-card white-text" style="margin-right:1rem;"></i>
+                <strong>Branding & Digital Revamp</strong>
+              </p>
+              <p class="white-text font-small mx-4">
+                A brand represents the sum of people’s perception of a company’s customer service, reputation,
+                advertising and logo. And
+                when all of these parts of the business are working well together, the overall brand tends to be
+                healthy.Branding is important because not only is it what makes a memorable impression on consumers but
+                it allows your customers
+                and clients to know what to expect from your company.
+              </p>
+            </div>
+            <!--/.Panel-->
+
+          </div>
+          <!-- /.Third column -->
+
+          <!-- Fourth column -->
+          <div class="col-md-6 mb-4 text-center">
+
+            <!--Panel-->
+            <div class="card card-body text-left rgba-gradient hoverable">
+              <p class="font-weight-bold title font-weight-bold white-text text-uppercase spacing mt-4 mx-4">
+                <i class="fab fa-searchengin white-text" style="margin-right:1rem;"></i>
+                <strong>SEO & SEM Marketing</strong>
+              </p>
+              <p class="white-text font-small mx-4">SEO is not only about search engines but good SEO practices improve
+                the user experience and usability of a web site.
+                Users trust search engines and having a presence in the top positions for the keywords the user is
+                searching, increases
+                the web site's trust. SEO is good for the social promotion of your web site.Increase brand awareness and
+                brand equity of product. Advertise to an audience that's already interested in you.
+              </p>
+            </div>
+            <!--/.Panel-->
+
+          </div>
+          <!-- /.Fourth column -->
+
+        </div>
+        <!-- /.Second row -->
+
+        <!-- Third row -->
+        <div class="row wow fadeIn" data-wow-delay="0.4s">
+
+          <!-- First column -->
+          <div class="col-md-4 mb-4 text-center">
+
+            <!--Panel-->
+            <div class="card card-body text-left rgba-gradient hoverable">
+              <p class="font-weight-bold title font-weight-bold white-text text-uppercase spacing mt-4 mx-4">
+                <i class="fas fa-shopping-cart white-text" style="margin-right:1rem;"></i>
+                <strong>e-Commerce Development</strong>
+              </p>
+              <p class="white-text font-small mx-4">
+                E-Commerce offers businesses a vital opportunity to offer their customers round-the-clock convenience.We
+                go beyond brick and mortar to help you achieve this.
+              </p>
+              <!-- Collapse buttons -->
+              <div>
+
+                <button style="color:#CC578A;" class="btn round btn-white btn-sm" type="button" data-toggle="collapse"
+                  data-target="#ecom" aria-expanded="false" aria-controls="collapseExample">
+                  <i class="fas fa-info"></i>
+                </button>
+              </div>
+              <!-- / Collapse buttons -->
+
+              <!-- Collapsible element -->
+              <div class="collapse" id="ecom">
+                <div class="mt-3">
+                  <div class="card">
+
+                    <div class="card-body">
+
+                      <div class="row">
+                        <div class="col-md-12">
+                          <p class="text-center">Frameworks we use.</p>
+                        </div>
+                      </div>
+
+                      <div class="row">
+
+                        <div class="col-3"><img src="./img/magento-logo.png">
+                        </div>
+                        <div class="col-3"><img src="./img/woocommerce.png">
+                        </div>
+                        <div class="col-3"><img src="./img/preshtashop.png">
+                        </div>
+                        <div class="col-3"><img src="./img/opencart-logo.png">
+                        </div>
+
+                      </div>
+                    </div>
+
+                  </div>
+                </div>
+              </div>
+              <!-- / Collapsible element -->
+            </div>
+            <!--/.Panel-->
+
+          </div>
+          <!-- /First column -->
+
+          <!-- First column -->
+          <div class="col-md-4 mb-4 text-center" style="margin-top:2%;">
+
+            <!--Panel-->
+            <div class="card card-body text-left rgba-gradient hoverable">
+              <p class="font-weight-bold title font-weight-bold white-text text-uppercase spacing mt-4 mx-4">
+                <i class="fas fa-file-invoice-dollar white-text" style="margin-right:1rem;"></i>
+                <strong>Pay Per Click Marketing</strong>
+              </p>
+              <p class="white-text font-small mx-4">
+                PPC makes it easy to manage your costs and to
+                calculate your estimated ROI. With PPC we can make the key change in the optimization
+                strategies to improve your Quality Score.
+              </p>
+
+            </div>
+            <!--/.Panel-->
+
+          </div>
+          <!-- /First column -->
+
+          <!-- Second column -->
+          <div class="col-md-4 mb-4 text-center">
+
+            <!--Panel-->
+            <div class="card card-body text-left rgba-gradient hoverable">
+              <p class="font-weight-bold title font-weight-bold white-text text-uppercase spacing mt-4 mx-4">
+                <i class="fas fa-laptop-code white-text" style="margin-right:1rem;"></i>
+                <strong>Hire Dedicated Developer</strong>
+              </p>
+              <p class="white-text font-small mx-4">We have special skilled developers who are constantly learning to
+                innovate,
+                create
+                eco-friendly solutions who will help you achieve your
+                platform specific needs.
+              </p>
+              <!-- Collapse buttons -->
+              <div>
+
+                <button style="color:#CC578A;" class="btn round btn-white btn-sm" type="button" data-toggle="collapse"
+                  data-target="#devs" aria-expanded="false" aria-controls="collapseExample">
+                  <i class="fas fa-info"></i>
+                </button>
+              </div>
+              <!-- / Collapse buttons -->
+
+
+              <!-- Collapsible element -->
+              <div class="collapse" id="devs">
+                <div class="mt-3">
+                  <div class="card">
+
+                    <div class="card-body">
+
+                      <div class="row">
+                        <div class="col-md-12">
+                          <p class="text-center">Developers we offer.</p>
+                        </div>
+                      </div>
+
+                      <div class="row">
+
+                        <div class="col-3"><img src="./img/cpp_logo.png">
+                        </div>
+                        <div class="col-3"><img src="./img/java.png">
+                        </div>
+                        <div class="col-3"><img src="./img/python.jpg">
+                        </div>
+                        <div class="col-3"><img src="./img/node.png">
+                        </div>
+
+                      </div>
+
+                      <div class="row">
+
+                        <div class="col-3"><img src="./img/mean-stack.png">
+                        </div>
+                        <div class="col-3"><img src="./img/mern-stack.jpg">
+                        </div>
+                        <div class="col-3"><img src="./img/php-logo.png">
+                        </div>
+                        <div class="col-3"><img src="./img/mysql.png">
+                        </div>
+
+                      </div>
+
+                      <div class="row">
+
+                        <div class="col-3"><img src="./img/drupal-logo.png">
+                        </div>
+                        <div class="col-3"><img src="./img/wordpress.png">
+                        </div>
+                        <div class="col-3"><img src="./img/joomla-logo.png">
+                        </div>
+                        <div class="col-3"><img src="./img/blogger.png">
+                        </div>
+
+                      </div>
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+            </div>
+            <!-- / Collapsible element -->
+          </div>
+          <!--/.Panel-->
+
+        </div>
+        <!-- /.Second column -->
+
+    </div>
+    <!-- /.Third row -->
+
+    </section>
+    <!--/Section: Services-->
+
+  </div>
+
+  </div>
+
+  <!--SECTION SEPARATOR-->
+
+
+  <div style="color: white;" class="rgba-gradient text-shadow">
+    <div class="container ">
+
+      <!--Section: Testimonials v.3-->
+      <section class="section team-section text-center pb-3 wow fadeIn" data-wow-delay="0.3s" style="padding:3%;">
+
+        <!--Section heading-->
+        <h1 class="head text-center h1 my-5 white-text">Our Clients' Words</h1>
+        <!--Section description-->
+        <p class="text-center white-text mb-5 mx-auto w-responsive">Lorem ipsum dolor sit amet, consectetur
+          adipisicing
+          elit. Fugit, error amet numquam iure provident voluptate esse quasi, veritatis totam voluptas
+          nostrum
+          quisquam eum porro a pariatur accusamus veniam.</p>
+
+        <!--Grid row-->
+        <div class="row text-center">
+
+          <!--Grid column-->
+          <div class="col-md-4 mb-4">
+
+            <div class="testimonial">
+              <!--Avatar-->
+              <div class="avatar mx-auto">
+                <img src="https://mdbootstrap.com/img/Photos/Avatars/img%20(1).jpg"
+                  class="rounded-circle z-depth-1 img-fluid">
+              </div>
+
+              <!--Content-->
+              <h4 class="font-weight-bold mt-4 mb-3 white-text">Anna Deynah</h4>
+              <h6 class="mb-3 font-weight-bold white-text">Web Designer</h6>
+              <p><i class="fas fa-quote-left"></i> Lorem ipsum dolor sit amet, consectetur adipisicing
+                elit. Quod
+                eos
+                id officiis hic tenetur quae quaerat ad velit ab hic tenetur.</p>
+
+              <!--Review-->
+              <div class="white-text">
+                <i class="fas fa-star"> </i>
+                <i class="fas fa-star"> </i>
+                <i class="fas fa-star"> </i>
+                <i class="fas fa-star"> </i>
+                <i class="fas fa-star-half-alt"> </i>
+              </div>
+            </div>
+          </div>
+          <!--Grid column-->
+
+          <!--Grid column-->
+          <div class="col-md-4 mb-4">
+            <div class="testimonial">
+              <!--Avatar-->
+              <div class="avatar mx-auto">
+                <img src="https://mdbootstrap.com/img/Photos/Avatars/img%20(32).jpg"
+                  class="rounded-circle z-depth-1 img-fluid">
+              </div>
+
+              <!--Content-->
+              <h4 class="font-weight-bold mt-4 mb-3 white-text">John Doe</h4>
+              <h6 class="mb-3 font-weight-bold white-text ">Web Developer</h6>
+              <p><i class="fas fa-quote-left"></i> Ut enim ad minima veniam, quis nostrum exercitationem
+                ullam
+                corporis
+                suscipit laboriosam, nisi ut aliquid ex ea commodi.</p>
+
+              <!--Review-->
+              <div class="white-text">
+                <i class="fas fa-star"> </i>
+                <i class="fas fa-star"> </i>
+                <i class="fas fa-star"> </i>
+                <i class="fas fa-star"> </i>
+                <i class="fas fa-star"> </i>
+              </div>
+            </div>
+          </div>
+          <!--Grid column-->
+
+          <!--Grid column-->
+          <div class="col-md-4 mb-4">
+            <div class="testimonial">
+              <!--Avatar-->
+              <div class="avatar mx-auto">
+                <img src="https://mdbootstrap.com/img/Photos/Avatars/img%20(10).jpg"
+                  class="rounded-circle z-depth-1 img-fluid">
+              </div>
+              <!--Content-->
+              <h4 class="font-weight-bold mt-4 mb-3 white-text">Maria Kate</h4>
+              <h6 class="mb-3 font-weight-bold white-text">Photographer</h6>
+              <p><i class="fas fa-quote-left"></i> At vero eos et accusamus et iusto odio dignissimos
+                ducimus qui
+                blanditiis praesentium voluptatum deleniti.</p>
+
+              <!--Review-->
+              <div class="white-text">
+                <i class="fas fa-star"> </i>
+                <i class="fas fa-star"> </i>
+                <i class="fas fa-star"> </i>
+                <i class="fas fa-star"> </i>
+                <i class="far fa-star"> </i>
+              </div>
+
+            </div>
+          </div>
+          <!--Grid column-->
+
+        </div>
+        <!--Grid row-->
+
+      </section>
+      <!--Section: Testimonials v.3-->
+    </div>
+
+  </div>
+
+  <!--SECTION SEPARATOR-->
+
+  <div class="container text-center">
+    <!-- Section: Team v.3 -->
+
+  <section class="section slider team-section pb-4 text-center wow fadeIn" data-wow-delay="0.3s" id="about" >
+
+    <!-- Section heading -->
+        <h2 class="font-weight-bold text-center h1 my-5 head">Founding Members</h2>
+        <!-- Section description -->
+        <p class="text-center grey-text mb-5 mx-auto w-responsive">Lorem ipsum dolor sit amet, consectetur
+          adipisicing
+          elit. Fugit, error amet numquam iure provident voluptate esse quasi, veritatis totam voluptas nostrum
+          quisquam
+          eum porro a pariatur accusamus veniam.</p>
+      <input type="radio" name="slider" id="slide-1" class="slider__radio">
+      <input type="radio" name="slider" id="slide-2" class="slider__radio">
+      <input type="radio" name="slider" id="slide-3" class="slider__radio" checked>
+      <input type="radio" name="slider" id="slide-4" class="slider__radio">
+      <input type="radio" name="slider" id="slide-5" class="slider__radio">
+  
+      <div class="slider__holder">
+  
+        <label for="slide-1" class="slider__item slider__item--1 cards">
+          <div class="slider__item-content rgba-gradient">
+        <!--Title-->
+        <h2 class="card-title text-center">
+          <a href="#0" style="color:white;" 
+              target="_blank">
+              Dhiraj Joshi
+          </a></h2>
+          <h6 class="font-weight-bold white-text text-center mb-4">Web Designer | Content-Media Specialist </h6>
+            
+        <!-- GitHub -->
+        <a href="https://www.github.com/ingeniousambivert" target="_blank"
+        class="p-2 m-2 fa-lg git-ic text-center white-text"><i class="fab fa-github"> </i></a>
+        <!-- Instagram -->
+        <a href="https://www.instagram.com/ingeniousambivert" target="_blank"
+            class="p-2 m-2 fa-lg ins-ic text-center white-text"><i class="fab fa-instagram"> </i></a>
+        <!-- LinkedIn -->
+        <a href="https://www.linkedin.com/in/monarchmaisuriya" target="_blank"
+            class="p-2 m-2 fa-lg li-ic text-center white-text"><i class="fab fa-linkedin-in"> </i></a>
+                
+          </div>
+
+        </label> <!-- Slider__item -->
+  
+        <label for="slide-2" class="slider__item  slider__item--2 cards">
+          <div class="slider__item-content rgba-gradient">
+            <!--Title-->
+            <h2 class="card-title text-center">
+              <a href="#0" style="color:white;" 
+                  target="_blank">
+                 Abhidyu Adukia
+              </a></h2>
+              <h6 class="font-weight-bold white-text text-center mb-4">Front-end Developer | Content-Media Specialist </h6>
+                
+            <!-- GitHub -->
+            <a href="https://www.github.com/ingeniousambivert" target="_blank"
+            class="p-2 m-2 fa-lg git-ic text-center white-text"><i class="fab fa-github"> </i></a>
+            <!-- Instagram -->
+            <a href="https://www.instagram.com/ingeniousambivert" target="_blank"
+                class="p-2 m-2 fa-lg ins-ic text-center white-text"><i class="fab fa-instagram"> </i></a>
+            <!-- LinkedIn -->
+            <a href="https://www.linkedin.com/in/monarchmaisuriya" target="_blank"
+                class="p-2 m-2 fa-lg li-ic text-center white-text"><i class="fab fa-linkedin-in"> </i></a>
+                    
+              </div>
+        </label> <!-- Slider__item -->
+  
+        <label for="slide-3" class="slider__item  slider__item--3 cards">
+          <div class="slider__item-content rgba-gradient">
+            <!--Title-->
+            <h2 class="card-title text-center">
+              <a href="https://ingeniousambivert.github.io"" style="color:white;" 
+                  target="_blank">
+                Monarch Maisuriya
+              </a></h2>
+              <h6 class="font-weight-bold white-text text-center mb-4">Full-stack Developer | Senior QA</h6>
+                
+            <!-- GitHub -->
+            <a href="https://www.github.com/ingeniousambivert" target="_blank"
+            class="p-2 m-2 fa-lg git-ic text-center white-text"><i class="fab fa-github"> </i></a>
+            <!-- Instagram -->
+            <a href="https://www.instagram.com/ingeniousambivert" target="_blank"
+                class="p-2 m-2 fa-lg ins-ic text-center white-text"><i class="fab fa-instagram"> </i></a>
+            <!-- LinkedIn -->
+            <a href="https://www.linkedin.com/in/monarchmaisuriya" target="_blank"
+                class="p-2 m-2 fa-lg li-ic text-center white-text"><i class="fab fa-linkedin-in"> </i></a>
+                    
+              </div>
+        </label> <!-- Slider__item -->
+  
+        <label for="slide-4" class="slider__item  slider__item--4 cards">
+          <div class="slider__item-content rgba-gradient">
+            <!--Title-->
+            <h2 class="card-title text-center">
+              <a href="#0" style="color:white;" 
+                  target="_blank">
+                  Himanshu Joshi
+              </a></h2>
+              <h6 class="font-weight-bold white-text text-center mb-4">Full-stack Developer | Project Manager</h6>
+                
+            <!-- GitHub -->
+            <a href="https://www.github.com/ingeniousambivert" target="_blank"
+            class="p-2 m-2 fa-lg git-ic text-center white-text"><i class="fab fa-github"> </i></a>
+            <!-- Instagram -->
+            <a href="https://www.instagram.com/ingeniousambivert" target="_blank"
+                class="p-2 m-2 fa-lg ins-ic text-center white-text"><i class="fab fa-instagram"> </i></a>
+            <!-- LinkedIn -->
+            <a href="https://www.linkedin.com/in/monarchmaisuriya" target="_blank"
+                class="p-2 m-2 fa-lg li-ic text-center white-text"><i class="fab fa-linkedin-in"> </i></a>
+                    
+              </div>
+        </label> <!-- Slider__item -->
+  
+        <label for="slide-5" class="slider__item slider__item--5 cards">
+          <div class="slider__item-content rgba-gradient">
+            <!--Title-->
+            <h2 class="card-title text-center">
+              <a href="#0" style="color:white;" 
+                  target="_blank">
+                Parin Patel
+              </a></h2>
+              <h6 class="font-weight-bold white-text text-center mb-4">Back-end Developer | Market Analyst</h6>
+                
+            <!-- GitHub -->
+            <a href="https://www.github.com/ingeniousambivert" target="_blank"
+            class="p-2 m-2 fa-lg git-ic text-center white-text"><i class="fab fa-github"> </i></a>
+            <!-- Instagram -->
+            <a href="https://www.instagram.com/ingeniousambivert" target="_blank"
+                class="p-2 m-2 fa-lg ins-ic text-center white-text"><i class="fab fa-instagram"> </i></a>
+            <!-- LinkedIn -->
+            <a href="https://www.linkedin.com/in/monarchmaisuriya" target="_blank"
+                class="p-2 m-2 fa-lg li-ic text-center white-text"><i class="fab fa-linkedin-in"> </i></a>
+                    
+              </div>
+        </label> <!-- Slider__item -->
+  
+      </div> <!-- Slider Holder -->
+  
+      <div class="bullets">
+        <label for="slide-1" class="bullets__item bullets__item--1"></label>
+        <label for="slide-2" class="bullets__item bullets__item--2"></label>
+        <label for="slide-3" class="bullets__item bullets__item--3"></label>
+        <label for="slide-4" class="bullets__item bullets__item--4"></label>
+        <label for="slide-5" class="bullets__item bullets__item--5"></label>
+      </div> <!-- Bullets -->
+      
+    </section> 
+
+    <!-- Section: Team v.3 -->
+  </div>
+
+  <!--SECTION SEPARATOR-->
+
+  <div class="rgba-gradient">
+    <div class="container">
+      <!--Section: Contact-->
+      <section id="contact">
+
+        <div class="container h-100 d-flex justify-content-center align-items-center">
+
+          <!--Grid row-->
+          <div class="row pt-5 mt-3">
+
+            <!--Grid column-->
+            <div class="col-md-12">
+
+              <div class="card">
+                <div class="card-body">
+
+                  <h2 class="font-weight-bold my-4 text-center mb-5 mt-4 head font-weight-bold">
+                    <strong>Get A Quotation</strong>
+                  </h2>
+
+                  <!--Grid row-->
+                  <div class="row mt-5">
+
+                    <!--Grid column-->
+                    <div class="col-md-6 ml-lg-5 ml-md-3">
+
+                      <!--Grid row-->
+                      <div class="row pb-4">
+                        <div class="col-2 col-lg-1">
+                          <i class="fas fa-money-bill-alt purple-text fa-lg"></i>
+                        </div>
+                        <div class="col-10">
+                          <h4 class="font-weight-bold mb-4">
+                            <strong>Finance</strong>
+                          </h4>
+                          <p class="">We provide you with the perfect combination of
+                            money spent and services
+                            received.</p>
+                        </div>
+                      </div>
+                      <!--Grid row-->
+
+                      <!--Grid row-->
+                      <div class="row pb-4">
+                        <div class="col-2 col-lg-1">
+                          <i class="fas fa-shield-alt deep-purple-text fa-lg"></i>
+                        </div>
+                        <div class="col-10">
+                          <h4 class="font-weight-bold mb-4">
+                            <strong>Security</strong>
+                          </h4>
+                          <p class="">We are associated with top Security Experts who help us ensure your product's
+                            security.</p>
+                        </div>
+                      </div>
+                      <!--Grid row-->
+
+                      <!--Grid row-->
+                      <div class="row pb-4">
+                        <div class="col-2 col-lg-1">
+                          <i class="fas fa-desktop indigo-text fa-lg"></i>
+                        </div>
+                        <div class="col-10">
+                          <h4 class="font-weight-bold mb-4">
+                            <strong>Technology</strong>
+                          </h4>
+                          <p class="">We use the trending technologies so that you won't
+                            have to put a cap on your
+                            business' growth.</p>
+                        </div>
+                      </div>
+                      <!--Grid row-->
+
+
+                    </div>
+                    <!--Grid column-->
+
+                    <!--Grid column-->
+                    <div class="col-md-5">
+
+                      <!--Naked Form-->
+                      <div class="card-block" id="contact-card">
+
+                        <!--Header-->
+
+
+                        <!--Body-->
+                        <form action="https://formspree.io/contactswichteam@gmail.com" method="POST">
+                          <div class="form-row mb-4">
+                            <div class="col">
+                              <!-- First name -->
+                              <input type="text" required name="first-name" id="defaultRegisterFormFirstName"
+                                class="form-control" placeholder="First name">
+                            </div>
+                            <div class="col">
+                              <!-- Last name -->
+                              <input type="text" required name="last-name" id="defaultRegisterFormLastName"
+                                class="form-control" placeholder="Last name">
+                            </div>
+                          </div>
+                          <!-- E-mail -->
+                          <input type="email" required name="email" id="defaultRegisterFormEmail"
+                            class="form-control mb-4" placeholder="E-mail">
+
+                          <!-- Subject -->
+                          <input type="text" required name="subject" id="defaultRegisterFormEmail"
+                            class="form-control mb-4" placeholder="Subject">
+
+                          <div class="md-form">
+                            <!-- Budget -->
+
+                            <select name="budget" required class="browser-default custom-select mb-4">
+                              <option value="" class="grey-text" selected disabled>Choose your budget</option>
+                              <option value="₹1,000-₹10,000">₹1,000-₹10,000</option>
+                              <option value="₹10,000-₹30,000">₹10,000-₹30,000</option>
+                              <option value="₹30,000-₹60,000">₹30,000-₹60,000</option>
+                              <option value="₹60,000-₹1,00,000">₹60,000-₹1,00,000</option>
+                            </select>
+                          </div>
+                          <div class="form-group">
+                            <!-- Phone number -->
+                            <input type="number" required name="phone" id="defaultRegisterPhonePassword"
+                              class="form-control" placeholder="Phone number"
+                              aria-describedby="defaultRegisterFormPhoneHelpBlock">
+                          </div>
+                          <!-- Message -->
+                          <div class="form-group">
+                            <textarea name="message" required class="form-control rounded-0"
+                              id="exampleFormControlTextarea2" rows="3" placeholder="Message"></textarea>
+                          </div>
+                          <div class="md-form" style="margin-left:7%;">
+                            <!-- Service -->
+                            <div class="row">
+                              <h5 style="font-family:Roboto                 Condensed, sans-serif;"
+                                class="w-responsive text-center dark-grey-text">Choose a service</h5>
+                              <div class="col-sm-6">
+                                <div class="custom-control custom-checkbox">
+                                  <input type="checkbox" class="custom-control-input" id="web-develop" name="service"
+                                    value="Web Development">
+                                  <label class="custom-control-label" for="web-develop">Web
+                                    Development</label>
+                                </div>
+                              </div>
+                              <div class="col-sm-6">
+                                <div class="custom-control custom-checkbox">
+                                  <input type="checkbox" class="custom-control-input" id="app-develop" name="service"
+                                    value="App Development">
+                                  <label class="custom-control-label" for="app-develop">App
+                                    Development</label>
+                                </div>
+                              </div>
+                            </div>
+
+                            <div class="row">
+                              <div class="col-sm-6">
+                                <div class="custom-control custom-checkbox">
+                                  <input type="checkbox" class="custom-control-input" id="web-des" name="service"
+                                    value="Web Design">
+                                  <label class="custom-control-label" for="web-des">Web
+                                    Designing</label>
+                                </div>
+
+                              </div>
+
+                              <div class="col-sm-6">
+                                <div class="custom-control custom-checkbox">
+                                  <input type="checkbox" class="custom-control-input" id="brand" name="service"
+                                    value="Brand Bible">
+                                  <label class="custom-control-label" for="brand">Brand & Revamp</label>
+                                </div>
+                              </div>
+
+                            </div>
+
+                            <div class="row">
+                              <div class="col-sm-6">
+                                <div class="custom-control custom-checkbox">
+                                  <input type="checkbox" class="custom-control-input" id="hire-dev" name="service"
+                                    value="Hire developer">
+                                  <label class="custom-control-label" for="hire-dev">Hire
+                                    developer</label>
+                                </div>
+                              </div>
+                              <div class="col-sm-6">
+                                <div class="custom-control custom-checkbox">
+                                  <input type="checkbox" class="custom-control-input" id="digital-marketing" name="service"
+                                    value="Digital MArketing">
+                                  <label class="custom-control-label" for="digital-marketing">Digital Marketing</label>
+                                </div>
+                              </div>
+                            </div>
+
+                            <div class="row">
+                              <div class="col-sm-6">
+                                <div class="custom-control custom-checkbox">
+                                  <input type="checkbox" class="custom-control-input" id="ecom-dev" name="service"
+                                    value="eCom-development">
+                                  <label class="custom-control-label" for="ecom-dev">E-Commerce Development</label>
+                                </div>
+                              </div>
+                              <div class="col-sm-6">
+                                <div class="custom-control custom-checkbox">
+                                  <input type="checkbox" class="custom-control-input" id="seo" name="service"
+                                    value="SEO & SEM">
+                                  <label class="custom-control-label" for="seo">SEO & SEM </label>
+                                </div>
+                              </div>
+                            </div>
+
+                          </div>
+
+
+                          <div class="text-center">
+                            <input type="submit" value="Send" class="btn round btn-purple ">
+                          </div>
+                        </form>
+
+                      </div>
+                      <!--Naked Form-->
+                    </div>
+                    <!--Grid column-->
+
+                  </div>
+                  <!--Grid row-->
+
+                </div>
+              </div>
+
+            </div>
+            <!--Grid column-->
+
+          </div>
+          <!--Grid row-->
+
+        </div>
+      </section>
+      <!--Section Contact-->
+    </div>
+
+    <!-- FOOTER SVG -->
+    <div class="svrow">
+      <svg id="footer-svg" preserveAspectRatio="xMidYMax meet" class="svg-separator sep4" viewBox="0 0 1600 200"
+        style="display: block;" data-height="200">
+        <polygon class="" style="fill: rgb(255, 255, 255);"
+          points="886,86 800,172 714,86 -4,86 -4,204 1604,204 1604,86 ">
+        </polygon>
+      </svg>
+    </div>
+
+  </div>
+
+  <!--Main layout-->
+</main>
+
+
+<!--SECTION SEPARATOR-->
+
+<!-- Footer -->
+<footer class="page-footer font-small white">
+
+  <div class="container text-center text-md-left mt-5">
+
+    <!-- Grid row -->
+    <div class="row mt-3">
+
+      <!-- Grid column -->
+      <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+
+        <!-- Content -->
+        <h5 class="text-uppercase black-text font-weight-bolder footer-text"
+          style="font-family: Oswald, sans-serif; font-size:1.25rem;">SWICH</h5>
+        <hr class="black-text text-center mb-4 mt-0 d-inline-block mx-auto" style="width: 250px;">
+        <p class="black-text">Business is about people and relationships. That is why we try to outperform
+          ourselves every time.</p>
+
+      </div>
+      <!-- Grid column -->
+
+      <!-- Grid column -->
+      <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+
+        <!-- Links -->
+        <h6 class="text-uppercase black-text footer-text">Contact Info</h6>
+        <hr class="black-text mb-4 mt-0 d-inline-block mx-auto" style="width: 180px;">
+        <p class="black-text">
+          <i class="fas fa-home mr-3 "></i> Ahmedabad ,Gujarat
+          ,India</p>
+        <p class="black-text">
+          <i class="fas fa-envelope mr-3 black-text"></i> contactswichteam@gmail.com</p>
+
+
+      </div>
+      <!-- Grid column -->
+
+      <!-- Grid column -->
+      <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+
+        <!-- Links -->
+        <h6 class="text-uppercase black-text footer-text">Useful links</h6>
+        <hr class="black-text mb-4 mt-0 d-inline-block mx-auto" style="width: 120px;">
+        <p class="black-text">
+          <a href="#!" class="black-text"></a>
+        </p>
+
+        <p class="black-text">
+          <a href="join.html" class="black-text">Become an Affiliate</a>
+        </p>
+
+        <p class="black-text">
+          <a href="help.html" class="black-text">Help</a>
+        </p>
+
+      </div>
+      <!-- Grid column -->
+
+    </div>
+    <!-- Grid row -->
+    <!-- Copyright -->
+    <div style="background:transparent;" class="footer-copyright text-center py-3 black-text">© 2019
+      Swich | All Rights Reserved
+    </div>
+    <!-- Copyright -->
+  </div>
+  <!-- Footer Links -->
+
+
+</footer>
+<!-- Footer -->
+
+<!-- Swiper JS -->
+<script src="../js/swiper.min.js"></script>
+
+<!-- Initialize Swiper -->
+<script>
+  var swiper = new Swiper('.swiper-container', {
+    pagination: {
+      el: '.swiper-pagination',
+    },
+  });
+</script>
+
+<script>
+function callRandom(){
+   var array = document.getElementsByName('slider');
+   var randomNumber=Math.floor(Math.random()*5);
+   array[randomNumber].checked = true;
+}
+</script>
+<script>
+  // When the user scrolls down 20px from the top of the document, show the button
+  window.onscroll = function () {
+    scrollFunction()
+  };
+
+  function scrollFunction() {
+    if (document.body.scrollTop > 500 || document.documentElement.scrollTop > 500) {
+      document.getElementById("myBtn").style.display = "block";
+    } else {
+      document.getElementById("myBtn").style.display = "none";
+    }
+  }
+
+  // When the user clicks on the button, scroll to the top of the document
+  function topFunction() {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+  }
+</script>
+
+<!--Custom JS-->                                                             
+                                                             
+<script type="text/javascript" src="js/script.js"></script>
+
+<!-- JQuery -->
+<script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+<!-- Bootstrap tooltips -->
+<script type="text/javascript" src="js/popper.min.js"></script>
+<!-- Bootstrap core JavaScript -->
+<script type="text/javascript" src="js/bootstrap.min.js"></script>
+<!-- MDB core JavaScript -->
+<script type="text/javascript" src="js/mdb.js"></script>
+</body>
+</html>
